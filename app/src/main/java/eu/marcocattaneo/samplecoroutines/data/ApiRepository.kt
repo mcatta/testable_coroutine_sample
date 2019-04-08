@@ -1,3 +1,3 @@
 package eu.marcocattaneo.samplecoroutines.data
 
-data class ApiRepository(var id: String, var name: String)
+data class ApiRepository(val id: String, val name: String)

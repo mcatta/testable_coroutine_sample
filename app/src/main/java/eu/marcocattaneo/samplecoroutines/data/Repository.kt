@@ -1,3 +1,3 @@
 package eu.marcocattaneo.samplecoroutines.data
 
-data class Repository(var repositoryID: String, var repositoryName: String)
+data class Repository(val repositoryID: String, val repositoryName: String)
