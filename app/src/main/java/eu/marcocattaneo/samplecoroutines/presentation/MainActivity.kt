@@ -17,9 +17,13 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() {
 
+    companion object {
+        const val BASE_URL = "https://api.github.com"
+    }
+
     private val githubService: GithubApiService by lazy {
         val retrofit = Retrofit.Builder()
-            .baseUrl(MainViewModel.BASE_URL)
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

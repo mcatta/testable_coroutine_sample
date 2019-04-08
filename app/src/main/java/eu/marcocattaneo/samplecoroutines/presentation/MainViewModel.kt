@@ -15,10 +15,6 @@ class MainViewModel(
     private val getRepositoriesUseCase: GetRepositoriesUseCase
 ) : ViewModel() {
 
-    companion object {
-        const val BASE_URL = "https://api.github.com"
-    }
-
     private val job = Job()
 
     val repositoriesLiveData = MutableLiveData<LiveDataResult<List<Repository>>>()
