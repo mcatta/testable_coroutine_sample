@@ -1,4 +1,4 @@
-# testable_coroutine_sample
+# How use and test Kotlin Coroutines with MockK library
 ![How use and test Kotlin Coroutines](https://cdn-images-1.medium.com/max/2400/1*R9JmbJLuAEpu-VZVPeH8XA.png)
 A sample application to learn how test a kotlin coroutine with Mockk library
 
