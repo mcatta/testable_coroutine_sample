@@ -35,7 +35,7 @@ class MainViewModelTest {
     }
 
     @Test
-    fun testFetchRepositories_Positive() = runBlocking {
+    fun testFetchRepositories_Positive() {
         coEvery { getRepositoriesUseCase.execute(any()) } returns listOf(
             Repository("a", "name"),
             Repository("b", "name"),
@@ -51,7 +51,7 @@ class MainViewModelTest {
     }
 
     @Test
-    fun testFetchRepositories_Negative() = runBlocking {
+    fun testFetchRepositories_Negative() {
         coEvery { getRepositoriesUseCase.execute(any()) } coAnswers { throw Exception("No network") }
 
         mainViewModel.repositoriesLiveData.observeForever {}
