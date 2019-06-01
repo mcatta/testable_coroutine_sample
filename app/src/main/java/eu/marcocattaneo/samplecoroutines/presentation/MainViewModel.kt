@@ -15,7 +15,7 @@ class MainViewModel(
     private val getRepositoriesUseCase: GetRepositoriesUseCase
 ) : ViewModel() {
 
-    private val job = Job()
+    private val job = SupervisorJob()
 
     val repositoriesLiveData = MutableLiveData<LiveDataResult<List<Repository>>>()
 
